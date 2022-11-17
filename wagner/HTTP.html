@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Protocolos</title>
+</head>
+<body>
+    <header>
+
+
+        <div class="menu">
+            <ul><b>
+                <li><a href="HTTP.html">HTTP</a></li>
+                <li><a href="HTTPS.html">HTTPS</a></li>
+                <li><a href="FTP.html">FTP</a></li>
+                <li><a href="DNS.html">DNS</a></li>
+                <li><a href="DHCP.html">DHCP</a></li>
+                <li><a href="SSH.html">SSH</a></li>
+                <li><a href="TELNET.html">TELNET</a></li>
+            </b>
+            </ul>
+        </div>
+    </header>
+    <div class="texto">
+        <div id="http">
+            <h1>HTTP</h1>
+            <br>
+            <p>
+                HTTP é um protocolo de transferência que possibilita que as pessoas que inserem a URL do seu site na Web possam ver os conteúdos 
+                e dados que nele existem. A sigla vem do inglês Hypertext Transfer Protocol.
+            </p>
+            <br>
+            <h2>O que é HTTP?</h2>
+            <br>
+            <p>
+                HTTP é um protocolo de transferência que possibilita que as pessoas que inserem a URL do seu site na Web possam ver os conteúdos e 
+                dados que nele existem. A sigla vem do inglês Hypertext Transfer Protocol.
+            <br>
+            <br>
+                Esse sistema é a base da comunicação que existe em toda a Internet em que os sites e conteúdos que tragam hiperlinks 
+                possam ser encontrados mais facilmente pelo público por meio de um clique do mouse ou um toque na tela.
+            <br>
+            <br>
+                Qualquer servidor que você escolha para hospedar o site da sua empresa tem um programa projetado para receber solicitações HTTP. 
+                Portanto, o navegador que você usa é um cliente HTTP que envia solicitações constantemente ao seu servidor.
+            <br>
+            <br>
+                Assim, quando um usuário acessa ou digita a URL do seu site, o navegador cria uma solicitação HTTP na web e a envia ao endereço de IP 
+                indicado pela URL. Dessa forma, o servidor recebe essa solicitação e envia os arquivos associados que, nada mais são, do que os sites 
+                que acessamos na Internet.
+            <br>
+            <br>
+            </p>
+            <h2>Qual a origem do HTTP?</h2>
+            <br>
+            <p>
+                O termo HTTP foi cunhado por Ted Nelson em 1965 no Projeto Xanadu, que por sua vez foi inspirado numa visão dos anos 
+                30 tida por Vannevar Bush referente ao sistema “memex” de recuperação e gestão de informação baseado em microfilmes 
+                descrito em seu ensaio de 1945 “As We May Think“.
+            <br>
+            <br>
+                Tim Berners-Lee e sua equipe foram os responsáveis ​​por inventar o HTTP original, juntamente com o HTML e a tecnologia associada 
+                para um servidor da Web e um navegador da Web baseado em texto.
+            <br>
+            <br>
+                Berners-Lee propôs pela primeira vez o projeto “WorldWideWeb” em 1989 – hoje conhecido como World Wide Web. 
+                A primeira versão do protocolo tinha apenas um método, chamado GET, que solicitava uma página de um servidor e tinha como 
+                resposta a página HTML.
+            <br>
+            <br>
+                A primeira versão documentada do HTTP foi liderada por Dave Raggett em 1995 e sua finalidade era expandir 
+                o protocolo com operações estendidas, negociação estendida, informação mais rica, vinculada a um protocolo 
+                de segurança que se tornou mais eficiente adicionando métodos e campos de cabeçalho adicionais.
+            <br>
+            <br>
+                O HTTP foi rapidamente adotado pelos principais desenvolvedores de navegadores no início de 1996. 
+                O padrão HTTP / 1.1, como definido no RFC 2068, foi oficialmente lançado em janeiro de 1997, enquanto 
+                melhorias e atualizações do padrão HTTP / 1.1 vieram em junho de 1999.
+            <br>
+            <br>
+                Por fim, em 2007, o HTTPbis Working Group foi formado, em parte, para revisar e esclarecer a especificação 
+                HTTP / 1.1. Em junho de 2014, o WG divulgou uma especificação atualizada de seis partes da obsoleta RFC 2616.
+            <br>
+            <br>
+            </p>
+            <h2>Como é o funcionamento do HTTP?</h2>
+            <br>
+            <p>
+                HTTP é um protocolo baseado em texto sem conexão. Isso significa que as pessoas que acessam o site da sua empresa enviam 
+                solicitações a servidores que as exibem na forma do seu site em formato de texto, imagens, e outros tipos de mídia. 
+                Depois que a solicitação é atendida por um servidor, a conexão entre o usuário e o servidor é desconectada.
+            <br>
+            <br>
+                Uma nova conexão deve ser feita para cada solicitação, isto é, cada vez que alguém acessa o seu site. 
+                Em suma, quando alguém digita a URL do seu site em um navegador, é isto que acontece:
+            <br>
+            <br>
+            <div class="lisinha">
+            <ol>
+                <li>
+                    se a URL pertencer a um domínio próprio, o navegador primeiro se conecta a um servidor e recuperará 
+                    o endereço IP correspondente ao servidor;
+                </li>
+                <br>
+                <li>
+                    o navegador se conecta ao servidor e envia uma solicitação HTTP para a página da web 
+                    desejada (que, neste exemplo, é o seu site);
+                </li>
+                <br>
+                <li>
+                    o servidor recebe a solicitação e verifica a página desejada. Se a página existir, 
+                    o servidor a mostrará. Se o servidor não conseguir encontrar a página solicitada, 
+                    ele enviará uma mensagem de erro HTTP 404, ou seja, página não encontrada;
+                </li>
+                <br>
+                <li>
+                    o navegador, então, recebe a página de volta e a conexão é fechada;
+                </li>
+                <br>
+                <li>
+                    caso a página exista (e é isso que se espera), o navegador a analisa e 
+                    procura outros elementos necessários para concluir a sua exibição, o que inclui seus textos, imagens e afins;
+                </li>
+                <br>
+                <li>
+                    para cada um desses elementos, o navegador faz conexões adicionais e solicitações 
+                    HTTP para o servidor para cada elemento;
+                </li>
+                <br>
+                <li>
+                    quando o navegador terminar de carregar todos os elementos, a página será carregada na janela do navegador.
+                </li>
+                <br>
+                <li>Para compreender melhor sobre o HTTP, assista a esse vídeo: <a href="https://www.youtube.com/watch?v=PcHbyGVoqZk">Aprendendo o protocolo HTTP</a></li>
+            </ol>
+            </div>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
